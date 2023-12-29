@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.IntroController">
+   <children>
+      <AnchorPane fx:id="PaneAñadirSWitch" prefHeight="508.0" prefWidth="751.0" style="-fx-background-color: #2b2b2b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="foto_fondo" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="149.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="lblCargando" layoutX="257.0" layoutY="186.0" prefHeight="112.0" prefWidth="210.0" text="CARGANDO..." textFill="WHITE" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="257.0" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="186.0">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

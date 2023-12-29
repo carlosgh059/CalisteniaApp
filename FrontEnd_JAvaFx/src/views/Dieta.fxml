@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DietaController">
+   <children>
+      <AnchorPane fx:id="PaneAñadirSWitch" prefHeight="508.0" prefWidth="751.0" style="-fx-background-color: #2b2b2b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <GridPane layoutX="24.0" layoutY="104.0" prefHeight="356.0" prefWidth="764.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="72.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #0a6a9a;" text="Horario" textAlignment="CENTER" wrapText="true">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffff00;" text="Lunes" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="131.0" style="-fx-background-color: #ff20de;" text="Jueves" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="125.0" style="-fx-background-color: #00b1f1;" text="Viernes" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="123.0" style="-fx-background-color: #afabaa;" text="Sabado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="130.0" style="-fx-background-color: #ffc000;" text="Domingo" wrapText="true" GridPane.columnIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Horario2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Media mañana" wrapText="true" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Comida" wrapText="true" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Desayuno" wrapText="true" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Merienda" wrapText="true" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Merienda2" wrapText="true" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" text="Cena" wrapText="true" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" wrapText="true" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Horario8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickHorario8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #68a7d3;" wrapText="true" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: #92d151;" text="Miercoles" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="66.0" prefWidth="98.0" style="-fx-background-color: #ff0101;" text="Martes" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lunes1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text="Café con leche semidesnatada y 2 tostadas con tomate rallado y aceite" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text="1 naranja" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text="Garbanzos con setas de temporada" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text=" 1 yogur proteinas" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text=" 1 yogur proteinas" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" text="Merluza en salsa verde con almejas y gambas" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Lunes8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickLunes8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fafea3;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text=" Cereales y leche semidesnatada. Zumo de naranja natural" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text=" Sándwich de pavo" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text="Alcachofas a la montillana con jamón" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text="Café con leche semidesnatada" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" text=" Crema de calabacín" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Martes8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMartes8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe6061;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text="Té y dos tostadas con mantequilla light" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text="1 manzana" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text="Calamares en salsa" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text="Queso fresco desnatado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" text=" Crema de calabacín" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Miercoles8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickMiercoles8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #c4e0b2;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text=" Zumo de naranja natural y dos tostadas con tomate rallado y aceite" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text="1 pera" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text="Guisantes con jamón" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text="1 yogur desnatado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" text=" Berenjena a la boloñesa vegana con bechamel de coliflor" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Jueves8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickJueves8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #fe94f0;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text=" café con leche semidesnatada y una tostada con mantequilla light" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text="Sándwich de jamón york" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text="Espinacas con garbanzos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text="1 yogur de gelatina" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" text=" Tabulé de quinoa" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Viernes8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickViernes8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #d8e2f2;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text="Cereales y leche semidesnatada. Zumo de naranja natural" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo1" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text="Zumo de naranja natural y dos tostadas con mermelada light" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text="1 naranja" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo2" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text="1 melocotón" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text="Merluza al cava con gambas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo3" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text="Solomillo de cerdo en salsa de vino fino" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text="Café con leche semidesnatada" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo4" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text="Queso fresco desnatado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo5" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text=" 1 yogur proteinas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" text=" Espárragos salteados con setas" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo6" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" text="Verduras salteadas a la provenzal" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo7" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo7" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Sabado8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickSabado8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #e6e6e7;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="Domingo8" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#EventoClickDomingo8" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #ffe498;" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="1.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="botonActualizar" layoutX="684.0" layoutY="466.0" mnemonicParsing="false" onMouseClicked="#EventoclickActualizar" prefHeight="30.0" prefWidth="114.0" text="Actualizar" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="LabelNombrePersona" layoutX="24.0" layoutY="16.0" prefHeight="55.0" prefWidth="475.0" text="Dieta : NombrePersona" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font name="Arial Italic" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="63.0" prefHeight="4.0" prefWidth="789.0" style="-fx-background-color: aeb0b3;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="53.0" />
+      <ComboBox fx:id="ComboTablaPersona" layoutX="324.0" layoutY="31.0" prefHeight="25.0" prefWidth="193.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>
